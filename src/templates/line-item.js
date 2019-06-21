@@ -12,6 +12,10 @@ const lineItemTemplates = {
               <button class="{{data.classes.lineItem.quantityButton}} {{data.classes.lineItem.quantityIncrement}}" type="button" data-line-item-id="{{data.id}}" data-element="lineItem.quantityIncrement">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12 7H9V4H7v3H4v2h3v3h2V9h3z"/></svg><span class="visuallyhidden">Increment</span>
               </button>
+              <button class="{{data.classes.lineItem.remove}}" value="0" data-line-item-id="{{data.id}}" data-element="lineItem.remove">
+                <span aria-role="hidden">&times;</span>
+                <span class="visuallyhidden">Remove</span>
+             </button>
             </div>`,
 };
 
