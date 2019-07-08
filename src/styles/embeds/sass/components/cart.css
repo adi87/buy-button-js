@@ -118,6 +118,7 @@
   margin-left: 80px;
   display: block;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .shopify-buy__cart-item__price {

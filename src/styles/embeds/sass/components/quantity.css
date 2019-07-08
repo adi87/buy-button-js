@@ -31,6 +31,16 @@
   }
 }
 
+.shopify-buy__line-item-remove{
+  border: 0px;
+  top: -12px;
+  position:absolute;
+  right:0;
+  float:none;
+  text-align:right;
+  color: #016ab0;
+}
+
 .shopify-buy__quantity-decrement {
   border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
