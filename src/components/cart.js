@@ -154,9 +154,9 @@ export default class Cart extends Component {
    */
   createCheckout() {
     return this.props.client.checkout.create().then((checkout) => {
-
       localStorage.setItem(this.localStorageCheckoutKey, checkout.id);
       this.model = checkout;
+      this.setCustomAttributes();
       return checkout;
     });
   }
@@ -281,6 +281,14 @@ export default class Cart extends Component {
   setNote(evt) {
     const note = evt.target.value;
     return this.props.client.checkout.updateAttributes(this.model.id, {note}).then((checkout) => {
+      this.model = checkout;
+      return checkout;
+    });
+  }
+
+  setCustomAttributes() {
+    const customAttributes = {customAttributes: this.options.customAttributes};
+    return this.props.client.checkout.updateAttributes(this.model.id, customAttributes).then((checkout) => {
       this.model = checkout;
       return checkout;
     });
