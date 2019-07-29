@@ -153,8 +153,7 @@ export default class Cart extends Component {
    * @return {Promise} promise resolving to cart instance
    */
   createCheckout() {
-    return this.props.client.checkout.create().then((checkout) => {
-
+    return this.props.client.checkout.create({customAttributes: this.options.customAttributes}).then((checkout) => {
       localStorage.setItem(this.localStorageCheckoutKey, checkout.id);
       this.model = checkout;
       return checkout;
