@@ -16,7 +16,7 @@ export default class CheckoutNavigator {
     if (this.config.cart.popup) {
       window.open(url, 'checkout', this.params);
     } else {
-      window.location = '/multipass?checkoutUrl=' + encodeURI(url);
+      window.location = url;
     }
   }
 }
