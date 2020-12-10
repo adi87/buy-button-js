@@ -124,9 +124,8 @@
 .shopify-buy__cart-item__title {
   font-size: 14px;
   margin-left: 80px;
+  margin-bottom: 3px;
   display: block;
-  margin-bottom: 10px;
-  position: relative;
 }
 
 .shopify-buy__cart-item__price {

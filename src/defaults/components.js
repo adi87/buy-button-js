@@ -245,7 +245,7 @@ const defaults = {
       image: true,
       variantTitle: true,
       title: true,
-      price: true,
+      price: false,
       priceWithDiscounts: true,
       quantity: true,
       quantityIncrement: true,
