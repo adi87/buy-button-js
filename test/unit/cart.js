@@ -276,7 +276,6 @@ describe('Cart class', () => {
         assert.include(cartLineItemsHtml, 'data-element="lineItem.price"');
         assert.include(cartLineItemsHtml, `$${discountedPrice}.00`);
 
-
         assert.calledThrice(formatMoneySpy);
         assert.calledWith(formatMoneySpy.firstCall, fullPrice, moneyFormat);
         assert.calledWith(formatMoneySpy.secondCall, discountAmount, moneyFormat);

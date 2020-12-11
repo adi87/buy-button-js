@@ -275,7 +275,6 @@ const defaults = {
       quantityButton: 'shopify-buy__btn--seamless',
       quantityIncrement: 'shopify-buy__quantity-increment',
       quantityDecrement: 'shopify-buy__quantity-decrement',
-      remove: 'shopify-buy__line-item-remove',
     },
   },
   toggle: {
