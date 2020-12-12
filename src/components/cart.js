@@ -70,7 +70,6 @@ export default class Cart extends Component {
       [`click ${this.selectors.lineItem.quantityIncrement}`]: this.onQuantityIncrement.bind(this, 1),
       [`click ${this.selectors.lineItem.quantityDecrement}`]: this.onQuantityIncrement.bind(this, -1),
       [`click ${this.selectors.cart.button}`]: this.onCheckout.bind(this),
-      [`click ${this.selectors.lineItem.remove}`]: this.onQuantityBlur.bind(this),
       [`blur ${this.selectors.lineItem.quantityInput}`]: this.onQuantityBlur.bind(this),
       [`blur ${this.selectors.cart.note}`]: this.setNote.bind(this),
     }, this.options.DOMEvents);
